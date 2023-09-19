@@ -1,0 +1,39 @@
+@charset "utf-8";
+body {
+    background: -moz-linear-gradient(top, royalblue, #FFF);
+    background: -webkit-linear-gradient(top, royalblue, #FFF);
+    background: linear-gradient(to bottom, royalblue, #FFF);
+}
+h1 {
+    color : white;
+    /*colorを#0C419Bにするのとroyalblueにするのどっちがいいんだろう*/
+    font-size : 48px;
+    text-align : center;
+}
+.transfer {
+    font-size : 30px;
+    text-align : center;
+    /*background-color : lightskyblue;*/
+    /*色は仮*/
+    width : 100%;
+}
+.abstract {
+    font-size : 18px;
+    /*width : 75%;*/
+    text-align : center;
+    padding-left : 13%;
+    padding-right : 13%; 
+    /*background: -moz-linear-gradient(top, skyblue, #FFF);
+  background: -webkit-linear-gradient(top, skyblue, #FFF);
+  background: linear-gradient(to bottom, skyblue, #FFF);*/
+} 
+h2 {
+    color : darkblue;
+}
+.Home, .Team, .Project {
+   /*padding指定と背景色の領域指定が別のclassで行われてるから後でバグりそう*/
+   /*background-color : pink; */
+   padding-left : 5%;
+   padding-right : 5%; 
+   margin-left : 0%; 
+}

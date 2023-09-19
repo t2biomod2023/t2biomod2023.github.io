@@ -1,0 +1,20 @@
+@charset "utf-8";
+.member {
+    width : 100%;
+}
+/*メンバー紹介の背景色は薄めの青系統の色にするつもり。今はわかりにくいから3色になってるけど1色にすると思う。*/
+.student1 {
+    width : 33.333%;
+    text-align : center;
+    background-color : skyblue;
+}
+.student2 {
+    width : 33.333%;
+    text-align : center;
+    background-color : lime;
+}
+.student3 {
+    width : 33.333%;
+    text-align : center;
+    background-color : yellow;
+}
