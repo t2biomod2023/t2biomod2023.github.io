@@ -1,0 +1,183 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, hr, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+/*== ここまでcssリセット ==*/
+
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    z-index: 2000;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    background-color: aliceblue;
+}
+
+.sticky_head {
+    position: fixed;
+}
+
+.gl_container {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+}
+
+.gl_container > .body_container {
+    height: 300px;
+}
+
+footer {
+    height: 300px;
+    background-color: azure;
+}
+/*== ここまでサイズ規定 ==*/
+
+.header_logo {
+    font-size: x-large;
+    display: flex;
+    max-width: 15vw;
+    height: 100%;
+    margin-left: 40px;
+    align-items: center;
+}
+
+.header_nav {
+    display: flex !important;
+    height: 100%;
+}
+
+.header_nav .gnav {
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5vw;
+    font-size: 14px;
+}
+
+li {
+    list-style: none;
+}
+
+.header_nav ul li {
+    height: 100%;
+    line-height: 1.24;
+}
+
+.header_nav ul li a {
+    padding: 0 1.2vw;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-weight: 700;
+}
+
+a {
+    color: #2e2e2e;
+    text-decoration: none;   
+}
+
+a, button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btm {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-indent: -9999px;
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.btm {
+    display: none;
+}
+/*==ここまでヘッダー==*/
+
+.keyvisual {
+    position: relative;
+}
+
+.keyvisual_wrap {
+    height: calc(100vh - 280px);
+    position: relative;
+    min-height: 600px;
+    margin: 100px 0 0;
+    overflow: hidden;
+    background-color: rgba(0, 1, 62, 0.05);
+    color: white;
+    text-align: center;
+}
+
+.keyvisual_wrap img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-bottom: 0;
+    border-radius: 0px;
+}
+
+.keyvisual_wrap .title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+    font-weight: 900;
+    line-height: 1.4;
+    font-size: 3.75vw;
+    letter-spacing: 0.03em;
+}
+
+.keyvisual_wrap .title p {
+    background-color: rgba(0, 1, 62, 0.2);
+    padding: 20px;
+}
+.keyvisual_wrap .title p span {
+    position: relative;
+    bottom: 20px;
+    font-size: 2.75vw;
+}
+
+
+
+
+
+
+
+
+
