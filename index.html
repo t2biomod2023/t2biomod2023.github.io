@@ -1,35 +1,71 @@
 <!DOCTYPE html>
-<html lang="ja">
- <head>
- <meta charset="utf-8">
- <title>サイトタイトル</title>
- <meta name="description" content="ディスクリプションを入力">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="style.css">
- <!-- [if lt IE 9] -->
- <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
- <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
- <!-- [endif] -->
- <script src="main.js"></script>
- </head>
- <body>
- <!----- header----->
- <header>ヘッダー</header>
- <nav>ナビ</nav>
- <!----- /header ----->
- 
- <!----- main ----->
- <article>
- <h1>タイトル</h1>
- <section>
- <h2>見出し２</h2>
- <p>コンテンツの内容</p>
- </section>
- </article>
- <!----- /main ----->
- 
- <!----- footer ----->
- <footer>フッター</footer>
- <!----- /footer ----->
- </body>
+<html>
+    <head>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <header class="sticky_head">
+            <div class="header_logo">
+                <a href="index.html">TokyoTech</a>
+            </div>
+            <nav class="header_nav">
+                <ul class="gnav">
+                    <li class="btm_menu">
+                        <a href="index.html">
+                            Home
+                            <button type="button" class="btm"></button>
+                        </a>
+                    </li>
+                    <li class="btm_menu">
+                        <a href="google.com">
+                            Abstract
+                            <button type="button" class="btm"></button>
+                        </a>
+                    </li>
+                    <li class="btm_menu">
+                        <a href="">
+                            Project
+                            <button type="button" class="btm"></button>
+                        </a>
+                    </li>
+                    <li class="btm_menu">
+                        <a href="">
+                            Team
+                            <button type="button" class="btm"></button>
+                        </a>
+                    </li>
+                    <li class="btm_menu">
+                        <a href="">
+                            Others
+                            <button type="button" class="btm"></button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="gl_container">
+            <div class="keyvisual">
+                <div class="keyvisual_wrap">
+                    <div class="title">
+                        <p>
+                            MICRO <br>
+                            INVADERGAME <br>
+                            <span>Team TokyoTech</span>
+                        </p>
+                    </div>
+
+                    <img src="mainvisual.jpg" alt="keyvisual">
+                </div>
+            </div>
+            <div class="body_container">
+
+            </div>
+            <footer>
+
+            </footer>
+        </div>
+
+
+    </body>
 </html>
