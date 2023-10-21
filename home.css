@@ -30,7 +30,8 @@ header {
     height: 100px;
     top: 0;
     left: 0;
-    background-color: aliceblue;
+    background-color: black;
+    border-bottom: solid #9e9e9e;
 }
 
 .sticky_head {
@@ -56,10 +57,17 @@ footer {
 .header_logo {
     font-size: x-large;
     display: flex;
-    max-width: 15vw;
+    max-width: 20vw;
     height: 100%;
     margin-left: 40px;
     align-items: center;
+    text-align: center;
+}
+
+.header_logo a img {
+    width: 100%;
+    display: block;
+    margin: auto;
 }
 
 .header_nav {
@@ -72,6 +80,7 @@ footer {
     justify-content: center;
     padding: 0 1.5vw;
     font-size: 14px;
+
 }
 
 li {
@@ -90,7 +99,15 @@ li {
     display: flex;
     align-items: center;
     height: 100%;
-    font-weight: 700;
+}
+
+.nav_img {
+    height: 24px;
+    text-align: center;
+}
+
+.header_nav ul li a img {
+        height: 100%;
 }
 
 a {
