@@ -8,6 +8,10 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 }
 /*== ここまでcssリセット ==*/
 
+p , h1 {
+    color: white;
+}
+
 
 html {
     margin: 0;
@@ -43,11 +47,11 @@ header {
     position: relative;
     margin: 100px 0 0;
     width: 100%;
-    height: 1000px;
+    height: auto;
 }
 
 .gl_container > .body_container {
-    height: 300px;
+    height: auto;
 }
 
 footer {
@@ -204,10 +208,26 @@ a, button {
 
 /*==ここまでkeyvisual==*/
 
+.V_wrap {
+    margin: 100px 0;
+}
+
+.V_wrap p {
+    text-align: center;
+    font-size: 3em;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+/*==ここまでyoutube==*/
+
 
 .ftlogo_container {
     margin: 10px;
-    height: 50%;
+    height: 150px;
 }
 
 .ftlogo_container p {
@@ -224,3 +244,76 @@ a, button {
     color: white;
 }
 
+
+
+
+.teamtitle {
+    text-align: center;
+}
+
+.teamtitle h1 {
+    font-size: 3em;
+}
+
+.intrflex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    padding: 0 15%;
+    border: solid white;
+    justify-content: center;
+}
+
+.intrbox {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(122, 122, 122);
+}
+
+.intrimg {
+    width: 80%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.intrbox img {
+    width: 100%;
+    height: auto;
+}
+
+.abst_wrap {
+    text-align: center;
+    padding: 0 17%;
+    margin-bottom: 100px;
+}
+
+.abst_wrap p {
+    font-size: 1.8em;
+    letter-spacing: 0.05em;
+}
+
+.abst0 {
+    font-size: 2em;
+}
+.abst1 {
+    color: #0f0;
+    font-size: 1.2em;
+}
+
+
+.gamewrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.gamepage {
+    height: 100px;
+}
+.gc {
+    border: 1px solid #000;
+    background: #777777;
+}
