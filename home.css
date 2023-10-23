@@ -41,6 +41,7 @@ header {
 
 .gl_container {
     position: relative;
+    margin: 100px 0 0;
     width: 100%;
     height: 1000px;
 }
@@ -51,7 +52,8 @@ header {
 
 footer {
     height: 300px;
-    background-color: azure;
+    background-color: black;
+    border-top: solid red;
 }
 /*== ここまでサイズ規定 ==*/
 
@@ -59,6 +61,7 @@ footer {
     font-size: x-large;
     display: flex;
     max-width: 20vw;
+    min-width: 180px;
     height: 100%;
     margin-left: 40px;
     align-items: center;
@@ -148,6 +151,8 @@ a, button {
 }
 
 .keyvisual_wrap {
+    display: flex;
+    justify-content: center;
     height: calc(100vh - 280px);
     position: relative;
     min-height: 600px;
@@ -159,11 +164,11 @@ a, button {
 }
 
 .keyvisual_wrap img {
-    width: 100%;
-    height: 100%;
-    display: flex;
+    width: 1264px;
+    height: auto;
     padding-bottom: 0;
     border-radius: 0px;
+    text-align: center;
 }
 
 .keyvisual_wrap .title {
@@ -182,13 +187,11 @@ a, button {
 }
 
 .keyvisual_wrap .title p {
-    background-color: rgba(0, 1, 62, 0.2);
+    background-color: rgba(0, 1, 62, 0.5);
     padding: 20px;
 }
-.keyvisual_wrap .title p span {
-    position: relative;
-    bottom: 20px;
-    font-size: 2.75vw;
+.keyvisual_wrap .title img {
+    width: 100%;
 }
 
 .gradientmask {
@@ -199,10 +202,25 @@ a, button {
     height: 300px;
 }
 
+/*==ここまでkeyvisual==*/
 
 
+.ftlogo_container {
+    margin: 10px;
+    height: 50%;
+}
 
+.ftlogo_container p {
+    height: 100%;
+}
 
+.ftlogo_container p img {
+    height: 100%;
+}
 
-
+.copyright {
+    vertical-align: bottom;
+    text-align: center;
+    color: white;
+}
 
