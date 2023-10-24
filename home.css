@@ -6,7 +6,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     vertical-align: baseline;
     background: transparent;
 }
-/*== ここまでcssリセット ==*/
+/*== ここまでcssリセット comment==*/
 
 p , h1 {
     color: white;
@@ -59,7 +59,7 @@ footer {
     background-color: black;
     border-top: solid red;
 }
-/*== ここまでサイズ規定 ==*/
+/*== ここまでサイズ規定 comment==*/
 
 .header_logo {
     font-size: x-large;
@@ -113,6 +113,10 @@ li {
     height: 24px;
     text-align: center;
 }
+.nav_img_G {
+    height: 28px;
+    text-align: center;
+}
 
 .header_nav ul li a img {
         height: 100%;
@@ -148,7 +152,7 @@ a, button {
 .btm {
     display: none;
 }
-/*==ここまでヘッダー==*/
+/*==ここまでheader comment==*/
 
 .keyvisual {
     position: relative;
@@ -206,7 +210,7 @@ a, button {
     height: 300px;
 }
 
-/*==ここまでkeyvisual==*/
+/*==ここまでkeyvisual comment==*/
 
 .V_wrap {
     margin: 100px 0;
@@ -222,7 +226,8 @@ a, button {
     justify-content: center;
     width: 100%;
 }
-/*==ここまでyoutube==*/
+/*==ここまでyoutube comment==*/
+/*==ここまでhome comment==*/
 
 
 .ftlogo_container {
@@ -243,7 +248,7 @@ a, button {
     text-align: center;
     color: white;
 }
-
+/*==ここまでfooter comment==*/
 
 
 
@@ -284,16 +289,18 @@ a, button {
     width: 100%;
     height: auto;
 }
+/*==ここまでTEAM comment==*/
 
 .abst_wrap {
-    text-align: center;
-    padding: 0 17%;
-    margin-bottom: 100px;
+    text-align: left;
+    padding: 30px 17%;
+    margin-bottom: 50px;
 }
 
 .abst_wrap p {
-    font-size: 1.8em;
+    font-size: 1.2em;
     letter-spacing: 0.05em;
+    line-height: 1.2;
 }
 
 .abst0 {
@@ -303,6 +310,134 @@ a, button {
     color: #0f0;
     font-size: 1.2em;
 }
+.br {
+    line-height: 1.4;
+    vertical-align: bottom;
+}
+/*==ここまでabstract comment==*/
+
+
+
+.prj_wrap {
+    height: auto;
+    padding: 30px 17%;
+    display: flex;
+    flex-direction: column;
+}
+
+.prj_top h1 {
+    border-left: solid red;
+    border-left-width: 10pt;
+    border-bottom: solid gray;
+    padding-left: 10px;
+}
+.prj_parts h1 {
+    border-left: solid greenyellow;
+    border-left-width: 10pt;
+    border-bottom: solid gray;
+    padding-left: 10px;
+}
+
+
+.prj_bodytext {
+    width: 90%;
+    padding-left: 10%;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+/*==ここまでproject comment==*/
+
+
+
+
+
+.DS_wrap {
+    padding: 0 17%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.DS_title {
+    border-left: solid red;
+    border-left-width: 10pt;
+    border-bottom: solid gray;
+    padding-left: 10px;
+    margin-top: 40px;
+}
+.DS_subti {
+    border-bottom: solid gray;
+    padding-left: 7px;
+    font-size: 1.5em;
+}
+.DS_bodytext {
+    width: 90%;
+    padding-left: 10%;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+table {
+    margin-left: 50px;
+    text-align: center;
+    position: relative;
+    border-collapse: collapse; 
+    background-color: #f6f6f6;
+  }/* Spacing */
+  td, th {
+    border: 1px solid #999;
+    padding: 20px;
+  }
+  thead th {
+    background: black;
+    color: white;
+    border-radius: 0;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    border-bottom: 3px double #999;
+  }
+  tbody th {
+    background: rgb(69, 165, 42);
+    color: black;
+    border-radius: 0;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+  }
+  .primary{
+    background-color: #000000
+  }
+  tfoot th,td{
+    padding: 0 20px;
+  }
+  tfoot > tr  {
+    background: black;
+    color: white;
+    border: 0;
+  }
+  tbody > tr:hover {
+    background-color: #ffc107;
+  }
+.DS_legend {
+    width: calc(100% - 50px);
+    padding: 10px 0;
+    padding-left: 50px;
+}
+pre {
+    width: 80%;
+    padding: 2em;/* 内側の余白 */
+    padding-right: 10em;
+    margin-top: 1.5em;/* 外側の余白 */
+    margin-left: 50px;
+    border: solid 1px #4d4d4d;/* 枠線（枠線を濃い黒に） */
+    background: #25292f;/* 背景色（背景を黒に） */
+    color: #fff;/* 文字色（文字を白に） */
+    line-height: 1.1;
+    }
+.tex {
+    line-height: 1.5;
+}
+/*==ここまでdesign&simulation comment==*/
+
 
 
 .gamewrap {
@@ -317,3 +452,4 @@ a, button {
     border: 1px solid #000;
     background: #777777;
 }
+/*==ここまでgame comment==*/
