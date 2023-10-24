@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <header class="sticky_head">
+            <div class="header_logo">
+                <a href="index.html"><img src="pics/TOKYO TECH.png" alt="TeamLogo"></a>
+            </div>
+            <nav class="header_nav">
+                <ul class="gnav">
+                    <li class="btm_menu">
+                        <a href="index.html">
+                            <div class="nav_img"><img src="pics/Home.png" alt="Home"></div>
+                            <button type="button" class="btm"></button>
+                        </a>
+                    </li>
+                    <li class="btm_menu">
+                        <a href="abstract.html">
+                            <div class="nav_img"><img src="pics/Abstract.png" alt="Abstract"></div>
+                            <button type="button" class="btm"></button>
+                        </a>
+                    </li>
+                    <li class="btm_menu">
+                        <a href="project.html">
+                            <div class="nav_img"><img src="pics/Project.png" alt="Project"></div>
+                            <button type="button" class="btm"></button>
+                        </a>
+                    </li>
+                    <li class="btm_menu">
+                        <a href="dsn_sim.html">
+                            <div class="nav_img_G"><img src="pics/DesignSimulation.png" alt="Design&Simulation"></div>
+                            <button type="button" class="btm"></button>
+                        </a>
+                    </li>
+                    <li class="btm_menu">
+                        <a href="method.html">
+                            <div class="nav_img_G"><img src="pics/E_Method.png" alt="Experimental Methods"></div>
+                            <button type="button" class="btm"></button>
+                        </a>
+                    </li>
+                    <li class="btm_menu">
+                        <a href="result.html">
+                            <div class="nav_img_G"><img src="pics/E_Result.png" alt="Experimental Result"></div>
+                            <button type="button" class="btm"></button>
+                        </a>
+                    </li>
+                    <li class="btm_menu">
+                        <a href="team.html">
+                            <div class="nav_img"><img src="pics/Team.png" alt="Team"></div>
+                            <button type="button" class="btm"></button>
+                        </a>
+                    </li>
+<!-----------------------------------------------------
+                    <li class="btm_menu">
+                        <a href="">
+                            Others
+                            <button type="button" class="btm"></button>
+                        </a>
+                    </li>
+            ------------------------------------------------------>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="gl_container">
+            <div class="body_container">
+                <div class="prj_wrap">
+                    <div class="prj_top">
+                        <h1 class="prj_title">What is MicroInvaderGame</h1>
+                        <div class="prj_bodytext">
+                            <p>
+                                The micro invader game is recreating "Space Invader" ,what is retro game, in a micro-sized form using bio-molecules.
+                                "Space Invader" is a game where players shoot down enemies attacking from space using bullets. The micro invader game consists of three main components imitating those.
+
+                                The first component is the enemy, which is made up of liposomes and nucleic acid chains. Enemies fluoresce in red.
+                                The second component is the bullet, which is made of silica beads and nucleic acid chains.
+                                The last component is the cannon, which is a mechanism whereby the bullet is fired by the player's manipulation. A strand displacement reaction of nucleic acids is used.
+
+                                These parts are placed on a field designed using avidin-biotin protein and nucleic acid strands (call it Base strand )on a glass surface.
+                                Base strands have complementary sequence to strands on the barrette surface and on the Enemy. This allows the barrettes and the enemy to stay on the field.
+                                The bullets are placed at end of the field. And at the other end of it, the enemy is placed.
+                                (The nucleotide sequence of the part where the Enemy is placed has a complementary sequence to the nucleotide sequence on the Enemy.)
+                            </p>    
+                        </div>
+                    </div>
+                    <div class="prj_parts">
+                        <h1 class="parts_title">
+                            Enemy
+                        </h1>
+                        <div class="prj_bodytext">
+                            <p>
+                                The basic structure of the Enemy is a liposome.
+                                The enemy's liposome has two types of DNA strands with cholesterol modifications in the center, penetrating the membrane.
+                                The outer parts of the DNA strands in the Enemy liposome have a complementary sequence to the DNA strand on the surface of the bullet and hybridizes.
+                                The inner ends of each DNA strand are modified with Cy3 and Cy5, respectively.
+                                When the DNA strand on the bullet and the two DNA strands on the Enemy hybridize, the DNA strands on the Enemy come closer to each other.
+                                This causes FRET (Fluorescence Resonance Energy Transfer) between the fluorescent substances, changing the color of the enemy from red to green.
+                                This color change represents the defeat of the enemy in the "Space Invader".
+                            </p>
+                        </div>
+                    </div>
+                    <div class="prj_parts">
+                        <h1 class="parts_title">
+                            Bullet
+                        </h1>
+                        <div class="prj_bodytext">
+                            <p>
+                                The bullets consist of DNA strands on the surface of a silica bead that are complementary to the strands on the field and on the Enemy.
+                                The bullet is anchored to the field by hybridization with Base strands.
+                                To run the bullet towards the enemy, RNase-H is used; RNase-H specifically hydrolyzes the RNA in the DNA/RNA double-stranded structure.
+                                This enzyme hydrolyzes the base-strand (RNA) hybridizing with DNA on the Bullet surface.
+                                Bullets that have lost their foothold can move on the field by rolling on the field and hybridize with new Base strands on the field.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="prj_parts">
+                        <h1 class="parts_title">
+                            Cannon
+                        </h1>
+                        <div class="prj_bodytext">
+                            <p>
+                                The canon is composed of two types of RNA strands, called Stopper strand and Trigger strand.
+                                Stopper strand is complementary to Base strand, and Trigger strand is complementary to Stopper strand.
+                                When the stopper strands are placed in a part of the field, those form double-stranded RNA with Base strands.
+                                RNase-H does not hydrolyze RNA/RNA double strands, preventing the bullet from advancing beyond that point.
+                                The Trigger strand has a sequence that is completely complementary to the Stopper strand, so when the Trigger strand is added to the field
+                                (,where Stopper/Base double strands exist), strand displacement reaction occurs and the Trigger and Stopper strands become a double strand.
+                                In other words, this removes the Stopper strand from Base strand.
+                                As a result, the Bullet is able to move toward the Enemy.
+                                The player of the Micro Invader Game can then drop the Trigger strand onto the field to fire the bullets.
+                                This action is called "Cannon" and represents the firing of bullets in "Space Invaders".
+                            </p>
+                        </div>
+                    </div>
+    
+                </div>
+
+
+            </div>
+            <footer>
+                <div class="ftlogo_container">
+                    <p><img src="pics/footerlogo.png" alt="footerlogo"></p>
+                </div>
+                <p class="copyright">©2023TeamTokyoTech</p>
+            </footer>
+        </div>
+
+
+    </body>
+</html>
