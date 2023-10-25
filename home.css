@@ -425,7 +425,7 @@ table {
 pre {
     width: 80%;
     padding: 2em;/* 内側の余白 */
-    padding-right: 10em;
+    padding-right: 8em;
     margin-top: 1.5em;/* 外側の余白 */
     margin-left: 50px;
     border: solid 1px #4d4d4d;/* 枠線（枠線を濃い黒に） */
@@ -435,6 +435,7 @@ pre {
     }
 .tex {
     line-height: 1.5;
+    color: white;
 }
 /*==ここまでdesign&simulation comment==*/
 
