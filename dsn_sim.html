@@ -135,13 +135,39 @@
                     </div>
                     <img src="pics/nupack.png" alt="nupack ingredients" class="DS_legend">
                     <img src="pics/histogram_9.svg" alt="histogram_9" class="DS_legend">
+                    <div class="hybr_wrap">
+                        <div class="hybr_box">
+                            <img src="pics/mfe_4.svg" alt="" class="hybr_img">
+                            <p>Base+Uni</p>
+                        </div>
+                    </div>
                     <img src="pics/histogram_10.svg" alt="histogram_10" class="DS_legend">
+                    <div class="hybr_wrap">
+                        <div class="hybr_box">
+                            <img src="pics/mfe_3.svg" alt="" class="hybr_img">
+                            <p>Base+Stopper</p>
+                        </div>
+                    </div>
                     <div class="DS_bodytext">
                         <p>
                             As shown in the NUPACK simulation results (Figure), the Stopper strand and Uni strands hybridize 100% with the Base strand.
                         </p>
                     </div>
                     <img src="pics/histogram_11.svg" alt="histogram_11" class="DS_legend">
+                    <div class="hybr_wrap">
+                        <div class="hybr_box">
+                            <img src="pics/mfe_3.svg" alt="" class="hybr_img">
+                            <p>Stopper+Trigger</p>
+                        </div>
+                        <div class="hybr_box">
+                            <img src="pics/mfe_7.svg" alt="" class="hybr_img">
+                            <p>Base</p>
+                        </div>
+                        <div class="hybr_box">
+                            <img src="pics/mfe_6.svg" alt="" class="hybr_img">
+                            <p>Base+Base</p>
+                        </div>
+                    </div>
                     <div class="DS_bodytext">
                         <p>
                             When the Stopper strands, Base strands, and Trigger strands are mixed, the Trigger strand and Stopper strand hybridize 100%.
@@ -154,22 +180,18 @@
                             Next, simulations using Visual DSD were performed to verify the chain displacement reaction when a Trigger chain was added. The code  and the graphical results are shown below.
                         </p>
                     </div>
-                    <pre>directive simulation {initial=0; final=7200; points=1000;plots=[[1]{2^};[1 2^];<1 2^>]}
-directive simulator deterministic
-def input1() = <1 2^>
-def input2() = [1]{2^}
-def output() = [1 2^]
-def N=20
-(N * input1()
-|N * input2()
-|0.0 * output())</pre>
-                    <div class="DS_bodytext">
-                        <p>
-                            Input 1: Trigger, Input 2: Base + Stopper
-                        </p>
-                    </div>
+<pre>directive simulation {initial=0; final=4000; points=1000;plots=[[1]{2^};[1 2^];<1 2^>]}
+directive simulator deterministic 
+def Trigger() = <1 2^>
+def StopperBase() = [1]{2^}
+def StopperTrigger() = [1 2^]
+def N=10
+def N1=1
+(N * Trigger()
+|N1 * StopperBase()
+|0.0 * StopperTrigger())</pre>
                     <h1 class="DS_subti">Result</h1>
-                    <img src="pics/simulation_1.svg" alt="simulation_1" class="DS_legend" style="background-color: white; margin-top: 20px;">
+                    <img src="pics/simulation_2.svg" alt="simulation" class="DS_legend" style="background-color: white; margin-top: 20px;">
                     <div class="DS_bodytext">
                         <p>
                             The reaction is rapid, indicating that the Trigger chain acts as a canon.
@@ -320,7 +342,8 @@ plt.show()</pre>
                     <img src="pics/glaph2.png" alt="result glaph2" class="glaph_pic">
                     <div class="DS_bodytext">
                         <p>
-                            The graph of \([P]\) draws a straight line. The slope of the line represents the degradation rate of the Base strand, which is proportional to the speed of bullet. The equation for \([P]\) indicates that \([P]\) is proportional to E and that the speed of bullet increases as the amount of RNase-H is increased.
+                            The graph of \([P]\) draws a straight line. The slope of the line represents the degradation rate of the Base strand, which is proportional to the speed of bullet.
+                            The equation for \([P]\) indicates that \([P]\) is proportional to \([E]\) and that the speed of bullet increases as the amount of RNase-H is increased.
                         </p>
                     </div>
                 </div>
