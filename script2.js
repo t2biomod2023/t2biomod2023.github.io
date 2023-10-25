@@ -23,7 +23,7 @@ const playerCount = 5;
 const playerSpacing = 100; // プレイヤー間のスペース
 let selectedPlayerIndex = 0;
 const playerScaleFactor = 1.5; // プレイヤーの大きさを変更する係数
-const bulletCooldown = 500; // 弾の射出間隔（ミリ秒）
+const bulletCooldown = 1000; // 弾の射出間隔（ミリ秒）
 
 let gameStarted = false;
 
