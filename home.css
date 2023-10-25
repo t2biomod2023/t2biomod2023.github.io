@@ -345,6 +345,12 @@ a, button {
     padding-top: 10px;
     margin-bottom: 30px;
 }
+
+.prj_img {
+    width: 100%;
+    margin: 20px 0;
+
+}
 /*==ここまでproject comment==*/
 
 
@@ -437,12 +443,36 @@ pre {
     line-height: 1.5;
     color: white;
 }
+.hybr_wrap {
+    width: calc(100% - 50px);
+    height: 300px;
+    padding-top: 20pX;
+    margin: 10px 0;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+}
+.hybr_box {
+    height: 100%;
+    width: auto;
+}
+.hybr_box p {
+    color: black;
+    text-align: center;
+}
+.hybr_img {
+    height: 80%;
+    width: auto;
+}
 /*==ここまでdesign&simulation comment==*/
 
 
 
 .gamewrap {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
 }
