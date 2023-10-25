@@ -169,7 +169,7 @@ def N=20
                         </p>
                     </div>
                     <h1 class="DS_subti">Result</h1>
-                    <img src="pics/simulation_1.svg" alt="simulation_1" class="DS_legend">
+                    <img src="pics/simulation_1.svg" alt="simulation_1" class="DS_legend" style="background-color: white; margin-top: 20px;">
                     <div class="DS_bodytext">
                         <p>
                             The reaction is rapid, indicating that the Trigger chain acts as a canon.
@@ -185,23 +185,28 @@ def N=20
                             The following model shows how RNase-H actually moves a bullet placed on a field.
                         </p>
                     </div>
-                    <div style="color: white;" class="tex">
+                    <div class="tex">
                         \begin{align}
                             X_1 + X_2 &\xrightarrow{k_1} X_3 \\
                             X_3 + E &\xrightarrow{k_2} P + E \\
                             \frac{d[X_1]}{dt} &= -k_1[X_1][X_2]+\frac{k_2[E]_0[X_3]}{K_m + [X_3]} \\
                             \frac{d[X_2]}{dt} &= -k_1[X_1][X_2]+\frac{k_2[E]_0[X_3]}{K_m + [X_3]} \\
                             \frac{d[X_3]}{dt} &= k_1[X_1][X_2]-\frac{k_2[E]_0[X_3]}{K_m + [X_3]} \\
-                            \frac{d[X_1]}{dt} &= \frac{k_2[E]_0[X_3]}{K_m + [X_3]} \\
+                            \frac{d[P]}{dt} &= \frac{k_2[E]_0[X_3]}{K_m + [X_3]} \\
                         \end{align}
                     </div>
                     <div class="DS_bodytext">
+                        <ul style="color: white; padding: 0 20%; margin-bottom: 20px;">
+                            <li>\([X_1]\) : concentration of Uni strand</li>
+                            <li>\([X_2]\) : concentration of Base strand</li>
+                            <li>\([X_3]\) : concentration of Uni/Base double strand</li>
+                            <li>\([E]\) : initial concentration of RNase-H</li>
+                            <li>\([P]\) : concentration of degraded Base strand</li>
+                        </ul>
                         <p>
-                            x1, x2, and x3 are the concentration of Uni strand, Base strand, and Base+Uni strand near the Bullrt in the field, respectively. k1 and k2 are the reaction rate constants for each reaction.
-                            E is the initial concentration of RNase-H. 
-                            P is the concentration of degraded Base strand.
-                            <br>
-                            The dynamics of the bullet can be inferred from the change in concentration of x3. x3 is extremely low, the barrette will leave the field and may be sent somewhere far away. If x3 is almost equal to the initial concentration of x1, the bullet may remain stuck in the field, and the continued presence of a certain percentage of x3 will allow the barrette to remain on the field. And when there is a certain amount of Base strand and Uni strand that do not form double strands, the barrette may roll over the field and move.
+                            The dynamics of the bullet can be inferred from the change in \([X_3]\). \([X_3]\) is extremely low, the barrette will leave the field and may be sent somewhere far away.
+                            If \([X_3]\) is almost equal to the initial \([X_1]\), the bullet may remain stuck in the field, and the continued presence of a certain percentage of Uni/Base double strand will allow the barrette to remain on the field.
+                            And when there is a certain amount of Base strand and Uni strand that do not form double strands, the barrette may roll over the field and move.
                             <br>
                             The actual calculations were performed using python. The code used and the results are shown below.
                         </p>
@@ -253,14 +258,16 @@ plt.show()</pre>
                     <img src="pics/glaph1.png" alt="result glaph1" class="glaph_pic">
                     <div class="DS_bodytext">
                         <p>
-                            As can be seen from the above results, when there are extremely large amounts of RNase-H, the concentration of x3 becomes very large and the bullet are fixed on the field. On the other hand, when RNase-H is extremely low, the concentration of x3 becomes very small and the bullet moves away from the field. It was shown that by setting the concentration of the RNase-H appropriately, the bullet is able to move in a rotational manner and invade the Enemy.
+                            As can be seen from the above results, when there are extremely large amounts of RNase-H, \([X_3]\) becomes very large and the bullet are fixed on the field.
+                            On the other hand, when RNase-H is extremely low, \([X_3]\) becomes very small and the bullet moves away from the field.
+                            It was shown that by setting the concentration of the RNase-H( \([E]\) ) appropriately, the bullet is able to move in a rotational manner and invade the Enemy.
                         </p>
                     </div>
                     <h1 class="DS_subti">simulation2</h1>
                     <div class="DS_bodytext">
                         <p>
-                            The speed of the bullet can be discussed by considering the change in the concentration of P.
-                            The code and graph with P concentration change are shown below.
+                            The speed of the bullet can be discussed by considering the change in \([P]\).
+                            The code and graph with \([P]\) change are shown below.
                         </p>
                     </div>
 <pre>import numpy as np
@@ -313,7 +320,7 @@ plt.show()</pre>
                     <img src="pics/glaph2.png" alt="result glaph2" class="glaph_pic">
                     <div class="DS_bodytext">
                         <p>
-                            The graph of P draws a straight line. The slope of the line represents the degradation rate of the Base strand, which is proportional to the speed of bullet. The equation for P indicates that the concentration of P is proportional to E and that the speed of bullet increases as the amount of RNase-H is increased.
+                            The graph of \([P]\) draws a straight line. The slope of the line represents the degradation rate of the Base strand, which is proportional to the speed of bullet. The equation for \([P]\) indicates that \([P]\) is proportional to E and that the speed of bullet increases as the amount of RNase-H is increased.
                         </p>
                     </div>
                 </div>
