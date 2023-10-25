@@ -387,7 +387,7 @@ table {
     position: relative;
     border-collapse: collapse; 
     background-color: #f6f6f6;
-  }/* Spacing */
+  }
   td, th {
     border: 1px solid #999;
     padding: 20px;
@@ -468,6 +468,33 @@ pre {
     width: auto;
 }
 /*==ここまでdesign&simulation comment==*/
+
+
+
+
+.rst_wrap {
+    padding: 0 17%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.rst_title {
+    border-left: solid gray;
+    border-left-width: 10pt;
+    border-bottom: solid gray;
+    padding-left: 10px;
+    margin-top: 40px;
+}
+.rst_bodytext {
+    width: 90%;
+    padding-left: 10%;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+.rst_fig {
+    width: 100%;
+}
+/*==ここまでresult comment==*/
 
 
 
