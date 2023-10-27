@@ -46,8 +46,8 @@
                         </a>
                     </li>
                     <li class="btm_menu">
-                        <a href="conclusion.html">
-                            <div class="nav_img"><img src="pics/CONCLUSION.png" alt="EConclusion"></div>
+                        <a href="achievement.html">
+                            <div class="nav_img"><img src="pics/ACHIEVEMENT.png" alt="EConclusion"></div>
                             <button type="button" class="btm"></button>
                         </a>
                     </li>
@@ -70,139 +70,26 @@
         <div class="gl_container">
             <div class="body_container">
                 <div class="DS_wrap">
-                    <h1 class="DS_title">Cannon design</h1>
-                    <div class="DS_bodytext">
-                        <p>
-                            The roles of each DNA and RNA strand are explained below.
-                            First, the DNA strand on the Bullet surface is called the Uni strand, which has a sequence that binds to the Receptor strand on the Enemy and causes a fluorescence change inside the Enemy.
-                            Second, the scaffold RNA strand is called the Base strand, which serves as the field in the microinvader game.
-                            The third type is the stopper strand, which is the RNA strand that stops the Bullet from going to the Enemy; the stopper strand has a complementary sequence to the base strand and blocks the Bullet's movement.
-                            RNase-H, the enzyme that acts as the engine of the bullet, hydrolyzes RNA in a DNA/RNA double-stranded structure, while the base/stopper strand is not hydrolyzed by RNase-H because it is an RNA/RNA double-stranded structure,not DNA/RNA. As a result, Bullet progression can be prevented.
-                            Finally, there is the Trigger strand, which has a complementary sequence to the Stopper strand; Cannon means that the player drops this Trigger strand into the field, and the Trigger strand causes a strand displacement reaction that pulls the Stopper strand away from the Base strand. This causes the Bullet to travel toward the Enemy.
-                        </p>    
-                    </div>
-                    <div class="base_table">
-                        <table>
-                            <caption>DNA / RNA base sequences</caption>
-                            <thead>
-                              <tr>
-                                <th class="primary" scope="col">Name</th>
-                                <th scope="col">DNA/RNA</th>
-                                <th scope="col">sequence</th>
-                                <th scope="col">bp</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">Uni</th>
-                                <td>DNA</td>
-                                <td>5'-**AAGAGATTAATTCCG-3'</td>
-                                <td>**+15</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Base</th>
-                                <td>RNA</td>
-                                <td>5'-**CGGAAUUAAUCUCUU-3'</td>
-                                <td>**+15</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Stopper</th>
-                                <td>RNA</td>
-                                <td>5'-GGGGGAAGAGAUUAAUUCCG-3'</td>
-                                <td>20</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Trigger</th>
-                                <td>RNA</td>
-                                <td>5'-CGGAAUUAAUCUCUUCCCCC-3'</td>
-                                <td>20</td>
-                              </tr>
-                            </tbody>
-                            <tfoot>
-                              <tr>
-                                <th></th>
-                                <td colspan="3">** is junk sequence,only for extending strand. <br>Each ** does not represent the same sequence</td>
-                              </tr>
-                            </tfoot>
-                        </table>
-                    </div>
-                    <h1 class="DS_title">Cannon simulation</h1>
-                    <img src="pics/cannon_simu.png" alt="" class="DS_legend_S">
-                    <div class="DS_bodytext">
-                        <p>
-                            The sequences of the Uni strand, Base strand, Stopper strand, and Trigger strand were designed using NUPACK. The sequences for the Uni strand were taken from the Enemy reference paper, since the interaction of the Uni strand with the Enemy is also involved.
-                        </p>
-                    </div>
-                    <img src="pics/nupack.png" alt="nupack ingredients" class="DS_legend">
-                    <img src="pics/histogram_9.svg" alt="histogram_9" class="DS_legend">
-                    <div class="hybr_wrap">
-                        <div class="hybr_box">
-                            <img src="pics/mfe_4.svg" alt="" class="hybr_img">
-                            <p>Base+Uni</p>
-                        </div>
-                    </div>
-                    <img src="pics/histogram_10.svg" alt="histogram_10" class="DS_legend">
-                    <div class="hybr_wrap">
-                        <div class="hybr_box">
-                            <img src="pics/mfe_3.svg" alt="" class="hybr_img">
-                            <p>Base+Stopper</p>
-                        </div>
-                    </div>
-                    <div class="DS_bodytext">
-                        <p>
-                            As shown in the NUPACK simulation results (Figure), the Stopper strand and Uni strands hybridize 100% with the Base strand.
-                        </p>
-                    </div>
-                    <img src="pics/histogram_11.svg" alt="histogram_11" class="DS_legend">
-                    <div class="hybr_wrap">
-                        <div class="hybr_box">
-                            <img src="pics/mfe_3.svg" alt="" class="hybr_img">
-                            <p>Stopper+Trigger</p>
-                        </div>
-                        <div class="hybr_box">
-                            <img src="pics/mfe_7.svg" alt="" class="hybr_img">
-                            <p>Base</p>
-                        </div>
-                        <div class="hybr_box">
-                            <img src="pics/mfe_6.svg" alt="" class="hybr_img">
-                            <p>Base+Base</p>
-                        </div>
-                    </div>
-                    <div class="DS_bodytext">
-                        <p>
-                            When the Stopper strands, Base strands, and Trigger strands are mixed, the Trigger strand and Stopper strand hybridize 100%.
-                            Based on these results, the above sequence was judged to be valid.
-                        </p>
-                    </div>
-                    <h1 class="DS_subti">Code</h1>
-                    <div class="DS_bodytext">
-                        <p>
-                            Next, simulations using Visual DSD were performed to verify the chain displacement reaction when a Trigger chain was added. The code  and the graphical results are shown below.
-                        </p>
-                    </div>
-<pre>directive simulation {initial=0; final=4000; points=1000;plots=[[1]{2^};[1 2^];<1 2^>]}
-directive simulator deterministic 
-def Trigger() = <1 2^>
-def StopperBase() = [1]{2^}
-def StopperTrigger() = [1 2^]
-def N=10
-def N1=1
-(N * Trigger()
-|N1 * StopperBase()
-|0.0 * StopperTrigger())</pre>
-                    <h1 class="DS_subti">Result</h1>
-                    <img src="pics/simulation_2.svg" alt="simulation" class="DS_legend" style="background-color: white; margin-top: 20px;">
-                    <div class="DS_bodytext">
-                        <p>
-                            The reaction is rapid, indicating that the Trigger chain acts as a canon.
-                        </p>
+                    <div class="index_box">
+                        <h3 class="index_title">page index</h3>
+                        <ul>
+                            <li><a href="#Bullet_simu"><p>>Bullet Simulation</p></a></li>
+                            <li><a href="#B1"><p class="ind">>Bullet is on field</p></a></li>
+                            <li><a href="#B2"><p class="ind">>Bullet Speed</p></a></li>
+                            <li><a href="#Cannon_simu"><p>>Cannon Simulation</p></a></li>
+                            <li><a href="#Can_D"><p class="ind">>Cannon Sequence Design</p></a></li>
+                            <li><a href="#Can_T"><p class="ind">>Time-Dependent Simulation</p></a></li>
+                        </ul>
                     </div>
                 </div>
-                <hr style="color: white;">
                 <div class="DS_wrap">
-                    <h1 class="DS_title">Bullet simulation</h1>
+                    <div class="title_top" id="Bullet_simu">
+                        <h1 class="DS_title">Bullet simulation</h1>
+                    </div>
                     <img src="pics/Bullet_simu.png" alt="" class="DS_legend_S">
-                    <h1 class="DS_subti">simulation1</h1>
+                    <div class="title_top" id="B1">
+                        <h1 class="DS_subti">Bullet is on field</h1>
+                    </div>
                     <div class="DS_bodytext">
                         <p>
                             The following model shows how RNase-H actually moves a bullet placed on a field.
@@ -286,7 +173,9 @@ plt.show()</pre>
                             It was shown that by setting the concentration of the RNase-H( \([E]\) ) appropriately, the bullet is able to move in a rotational manner and invade the Enemy.
                         </p>
                     </div>
-                    <h1 class="DS_subti">simulation2</h1>
+                    <div class="title_top" id="B2">
+                        <h1 class="DS_subti">Bullet speed</h1>
+                    </div>
                     <div class="DS_bodytext">
                         <p>
                             The speed of the bullet can be discussed by considering the change in \([P]\).
@@ -348,6 +237,150 @@ plt.show()</pre>
                         </p>
                     </div>
                 </div>
+
+                <div class="DS_wrap">
+<!-------------------
+                    <div class="title_top" id="Cannon_design">
+                        <h1 class="DS_title">Cannon design</h1>
+                    </div>
+                    <div class="DS_bodytext">
+                        <p>
+                            The roles of each DNA and RNA strand are explained below.
+                            First, the DNA strand on the Bullet surface is called the Uni strand, which has a sequence that binds to the Receptor strand on the Enemy and causes a fluorescence change inside the Enemy.
+                            Second, the scaffold RNA strand is called the Base strand, which serves as the field in the microinvader game.
+                            The third type is the stopper strand, which is the RNA strand that stops the Bullet from going to the Enemy; the stopper strand has a complementary sequence to the base strand and blocks the Bullet's movement.
+                            RNase-H, the enzyme that acts as the engine of the bullet, hydrolyzes RNA in a DNA/RNA double-stranded structure, while the base/stopper strand is not hydrolyzed by RNase-H because it is an RNA/RNA double-stranded structure,not DNA/RNA. As a result, Bullet progression can be prevented.
+                            Finally, there is the Trigger strand, which has a complementary sequence to the Stopper strand; Cannon means that the player drops this Trigger strand into the field, and the Trigger strand causes a strand displacement reaction that pulls the Stopper strand away from the Base strand. This causes the Bullet to travel toward the Enemy.
+                        </p>    
+                    </div>
+                    ---------------------------->
+                    <div class="title_top" id="Cannon_simu">
+                        <h1 class="DS_title">Cannon simulation</h1>
+                    </div>
+                    <img src="pics/cannon_simu.png" alt="" class="DS_legend_S">
+                    <div class="DS_bodytext">
+                        <p>
+                            The sequences of each strands were designed using NUPACK. <br>
+                            The sequences for the Uni strand were taken from the Enemy reference paper<a href="project.html#ref"><sup style="color: aqua;">[2]</sup></a>, since the interaction of the Uni strand with the Enemy is also involved.
+                        </p>
+                    </div>
+                    <div class="title_top" id="Can_D">
+                        <h1 class="DS_subti">Sequence Design</h1>
+                    </div>
+                    <div class="base_table">
+                        <table>
+                            <caption>DNA / RNA base sequences</caption>
+                            <thead>
+                              <tr>
+                                <th class="primary" scope="col">Name</th>
+                                <th scope="col">DNA/RNA</th>
+                                <th scope="col">sequence</th>
+                                <th scope="col">bp</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">Uni</th>
+                                <td>DNA</td>
+                                <td>5'-**AAGAGATTAATTCCG-3'</td>
+                                <td>**+15</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Base</th>
+                                <td>RNA</td>
+                                <td>5'-**CGGAAUUAAUCUCUU-3'</td>
+                                <td>**+15</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Stopper</th>
+                                <td>RNA</td>
+                                <td>5'-GGGGGAAGAGAUUAAUUCCG-3'</td>
+                                <td>20</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Trigger</th>
+                                <td>RNA</td>
+                                <td>5'-CGGAAUUAAUCUCUUCCCCC-3'</td>
+                                <td>20</td>
+                              </tr>
+                            </tbody>
+                            <tfoot>
+                              <tr>
+                                <th></th>
+                                <td colspan="3">** is junk sequence,only for extending strand. <br>Each ** does not represent the same sequence</td>
+                              </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+<!--                    <img src="pics/nupack.png" alt="nupack ingredients" class="DS_legend">  -->
+                    <img src="pics/histogram_9.svg" alt="histogram_9" class="DS_legend">
+                    <div class="hybr_wrap">
+                        <div class="hybr_box">
+                            <img src="pics/mfe_4.svg" alt="" class="hybr_img">
+                            <p>Base+Uni</p>
+                        </div>
+                    </div>
+                    <img src="pics/histogram_10.svg" alt="histogram_10" class="DS_legend">
+                    <div class="hybr_wrap">
+                        <div class="hybr_box">
+                            <img src="pics/mfe_3.svg" alt="" class="hybr_img">
+                            <p>Base+Stopper</p>
+                        </div>
+                    </div>
+                    <div class="DS_bodytext">
+                        <p>
+                            The Stopper strand and Uni strands hybridize 100% with the Base strand.
+                        </p>
+                    </div>
+                    <img src="pics/histogram_11.svg" alt="histogram_11" class="DS_legend">
+                    <div class="hybr_wrap">
+                        <div class="hybr_box">
+                            <img src="pics/mfe_3.svg" alt="" class="hybr_img">
+                            <p>Stopper+Trigger</p>
+                        </div>
+                        <div class="hybr_box">
+                            <img src="pics/mfe_7.svg" alt="" class="hybr_img">
+                            <p>Base</p>
+                        </div>
+                        <div class="hybr_box">
+                            <img src="pics/mfe_6.svg" alt="" class="hybr_img">
+                            <p>Base+Base</p>
+                        </div>
+                    </div>
+                    <div class="DS_bodytext">
+                        <p>
+                            When the Stopper strands, Base strands, and Trigger strands are mixed, the Trigger strand and Stopper strand hybridize 100%.
+                            Based on these results, the above sequence was judged to be valid.
+                        </p>
+                    </div>
+                    <div class="title_top" id="Can_T">
+                        <h1 class="DS_subti">Time-Dependent Advancement of Strand displacement</h1>
+                    </div>
+                    <div class="DS_bodytext">
+                        <p>
+                            Next, simulations using Visual DSD were performed to verify the chain displacement reaction when a Trigger chain was added. The code  and the graphical results are shown below.
+                        </p>
+                    </div>
+<pre>directive simulation {initial=0; final=4000; points=1000;plots=[[1]{2^};[1 2^];<1 2^>]}
+directive simulator deterministic 
+def Trigger() = <1 2^>
+def StopperBase() = [1]{2^}
+def StopperTrigger() = [1 2^]
+def N=10
+def N1=1
+(N * Trigger()
+|N1 * StopperBase()
+|0.0 * StopperTrigger())</pre>
+                    <h1 class="DS_subti">Result</h1>
+                    <img src="pics/simulation_2.svg" alt="simulation" class="DS_legend" style="background-color: white; margin-top: 20px;">
+                    <div class="DS_bodytext">
+                        <p>
+                            The reaction is rapid, indicating that the Trigger chain acts as a canon.
+                        </p>
+                    </div>
+                </div>
+                <hr style="color: white;">
             </div>
             <footer>
                 <div class="ftlogo_container">
