@@ -114,14 +114,36 @@ li {
     height: 100%;
 }
 
-.nav_img {
-    height: 24px;
-    text-align: center;
+    .nav_img {
+        height: 24px;
+        text-align: center;
+    }
+    .nav_img_G {
+        height: 28px;
+        text-align: center;
+    }
+@media (max-width: 1420px){
+    .nav_img {
+        height: 20px;
+        text-align: center;
+    }
+    .nav_img_G {
+        height: 23px;
+        text-align: center;
+    }
 }
-.nav_img_G {
-    height: 28px;
-    text-align: center;
+@media (max-width: 1220px){
+    .nav_img {
+        height: 16px;
+        text-align: center;
+    }
+    .nav_img_G {
+        height: 20px;
+        text-align: center;
+    }
 }
+
+
 
 .header_nav ul li a img {
         height: 100%;
@@ -319,10 +341,15 @@ a, button {
 
 .teamtitle {
     text-align: center;
+    margin-top: 30px;
 }
 
 .teamtitle h1 {
     font-size: 3em;
+}
+.teamtitle h2 {
+    color: white;
+    font-size: 2em;
 }
 
 .intrflex {
@@ -330,7 +357,6 @@ a, button {
     flex-wrap: wrap;
     width: 70%;
     padding: 0 15%;
-    border: solid white;
     justify-content: center;
 }
 
@@ -393,7 +419,9 @@ a, button {
     flex-direction: column;
 }
 
-.prj_top h1 {
+
+
+.prj_top h1 , .prj_title{
     border-left: solid red;
     border-left-width: 10pt;
     border-bottom: solid gray;
@@ -413,6 +441,13 @@ a, button {
     padding-top: 10px;
     margin-bottom: 30px;
 }
+.prj_bodytext h2{
+    color: white;
+    font-size: x-large;
+    border-bottom: solid#777777;
+    padding-left: 20px;
+    margin-top: 30px;
+}
 
 .prj_img {
     width: 100%;
@@ -420,9 +455,9 @@ a, button {
 
 }
 
-.goal_title {
-    margin: 0 20%;
-    width: 60%;
+.goal_title , .goal_link{
+    margin: 0 15%;
+    width: 70%;
 }
 .goal_title h1 {
     width: auto;
@@ -434,10 +469,9 @@ a, button {
     border: solid white;
 }
 .goal_wrap0 {
-    margin: 0 20%;
+    margin: 0 15%;
     background-color: #000;
-    border: solid red;
-    width: 60%;
+    width: 70%;
     display: grid;
     grid-template-areas: 
     "d1 d1 d5"
@@ -450,24 +484,23 @@ a, button {
     text-align: left;
 }
 .goal_wrap1 {
-    margin: 0 20%;
+    margin: 0 15%;
     background-color: #000;
-    border: solid red;
-    width: 60%;
+    width: 70%;
     display: grid;
     grid-template-areas: 
-    "e1 e1 e3"
-    "e2 e2 e4"
+    "e1 e1 e4"
+    "e2 e2 e5"
+    "e3 e3 e6"
     ;
     grid-template-columns: 100px 4fr 100px;
     grid-template-rows: auto auto;
     text-align: left;
 }
 .goal_wrap2 {
-    margin: 0 20%;
+    margin: 0 15%;
     background-color: #000;
-    border: solid red;
-    width: 60%;
+    width: 70%;
     display: grid;
     grid-template-areas: 
     "f1 f1 none"
@@ -511,6 +544,12 @@ a, button {
 .e4 {
     grid-area: e4;
 }
+.e5 {
+    grid-area: e5;
+}
+.e6 {
+    grid-area: e6;
+}
 .f1 {
     grid-area: f1;
 }
@@ -526,14 +565,14 @@ a, button {
 .f5 {
     grid-area: f5;
 }
-.d1 , .d2 , .e1 , .e2 , .f1 , .f3 {
+.d1 , .d2 , .e1 , .e2 , .e3 , .f1 , .f3 {
     font-size: 1.8em;
     padding-left: 40px;
 }
 .d3 , .d4 , .f2 {
     font-size: 1.4rem;
 }
-.d5 , .d6 , .d7 , .e3 , .e4 , .f4 , .f5 {
+.d5 , .d6 , .d7 , .e4 , .e5 , .e6 , .f4 , .f5 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -541,6 +580,22 @@ a, button {
 }
 .goal_wrap p {
     color: white;
+}
+@media (max-width: 1280px){
+    .d1 , .d2 , .e1 , .e2 , .e3 , .f1 , .f3 {
+        font-size: 1.5em;
+        padding-left: 40px;
+    }
+    .d3 , .d4 , .f2 {
+        font-size: 1.2rem;
+    }
+}
+.references {
+    border-left: solid grey;
+    border-left-width: 10pt;
+    border-bottom: solid gray;
+    padding-left: 10px;
+    margin-top: 40px;
 }
 
 
@@ -558,12 +613,40 @@ a, button {
     display: flex;
     flex-direction: column;
 }
+.index_box{
+    background-color: #25292f;
+    color: white;
+    width: 60%;
+    height: auto;
+    padding: 0 10%;
+    padding-bottom: 15px;
+    margin: 50px 10% 0;
+    text-align: left;
+}
+.index_title {
+    margin-top: 10px;
+    font-size: x-large;
+    border-bottom: solid #aaa;
+}
+.index_box ul li p {
+    font-size: 1.3rem;
+}
+.ind , .GGG{
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 1.5em;
+    color: rgb(109, 109, 194);
+}
 .DS_title {
     border-left: solid red;
     border-left-width: 10pt;
     border-bottom: solid gray;
     padding-left: 10px;
     margin-top: 40px;
+}
+.title_top {
+    padding-top: 100px;
+    width: 100%;
 }
 .DS_subti {
     border-bottom: solid gray;
@@ -575,6 +658,9 @@ a, button {
     padding-left: 10%;
     padding-top: 10px;
     margin-bottom: 30px;
+}
+.DS_bodytext p {
+    font-size: 1.2rem;
 }
 table {
     margin-left: 50px;
