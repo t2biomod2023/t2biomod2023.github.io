@@ -3,10 +3,10 @@
     <head>
         <link rel="icon" href="pics/EnemyBlack.png">
         <link rel="stylesheet" href="home.css">
-        <title>TeamTokyoTech / Team</title>
+        <title>TeamTokyoTech / Game</title>
     </head>
     <body>
-        <header class="sticky_head">
+        <header>
             <div class="header_logo">
                 <a href="index.html"><img src="pics/TOKYO TECH.png" alt="TeamLogo"></a>
             </div>
@@ -56,7 +56,7 @@
                     </li>
                     <li class="btm_menu">
                         <a href="team.html">
-                            <div class="nav_img"><img src="pics/TEAM_888.png" alt="Team"></div> <!--here-->
+                            <div class="nav_img"><img src="pics/Team.png" alt="Team"></div>
                             <button type="button" class="btm"></button>
                         </a>
                     </li>
@@ -64,35 +64,16 @@
             </nav>
         </header>
 
-        <div class="gl_container">
+        <div class="gl_container_game">
             <div class="body_container">
-                <div class="teamtitle"><h1>TOKYO TECH</h1><p>一旦プロフィール載せれるようにしただけです</p><p>内容修正and他メンバー追加は次に</p></div>
-                <div class="intrflex">
-                    <div class="intrbox">
-                        <div class="intrimg"><img src="pics/kakeru.jpg" alt=""></div>
-                        <p>Kakeru Matsuzaki</p>
-                        <p>wikiつくってる</p>
-                    </div>
-                    <div class="intrbox">
-                        <div class="intrimg"><img src="pics/fu-suke.jpg" alt=""></div>
-                        <p>Fusuke Kodama</p>
-                        <p>俺＞＞東大生物＞＞ゴキブリ</p>
-                    </div>
-                    <div class="intrbox">
-                        <div class="intrimg"><img src="pics/ryusei.jpg" alt=""></div>
-                        <p>Ryusei Shinkai</p>
-                        <p>リーダーです。</p>
-                    </div>
-                    <div class="intrbox">
-                        <div class="intrimg"><img src="pics/RNaseH.gif" alt=""></div>
-                        <p>RNaseH</p>
-                        <p>RNAぱくぱく</p>
-                    </div>
-
+                <div class="gamewrap">
+                    <canvas id="gameCanvas" class="gc" width="800" height="550"></canvas>
+                    <script src="script2.js"></script>
+                    <script src="player.png"></script>
+                    <script src="enemy.png"></script>
                 </div>
-
             </div>
-            <footer>
+            <footer class="gamepage">
                 <div class="ftlogo_container">
                     <p><img src="pics/footerlogo.png" alt="footerlogo"></p>
                 </div>
