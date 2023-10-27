@@ -49,6 +49,11 @@ header {
     width: 100%;
     height: auto;
 }
+.gl_container_game {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
 
 .gl_container > .body_container {
     height: auto;
@@ -212,6 +217,52 @@ a, button {
 
 /*==ここまでkeyvisual comment==*/
 
+
+
+
+.grid_container {
+    height: auto;
+    margin: 30px 17%;
+    display: grid;
+    color: white;
+    text-align: center;
+}
+
+.grid_container {
+    grid-template-areas: 
+    " g1_1 g1_1"
+    " g2_1 g2_2"
+    " g3_1 g3_1";
+}
+
+.g1_1 {
+    grid-area: g1_1;
+    font-size: xx-large;
+}
+.g2_1 {
+    grid-area: g2_1;
+}
+.g2_2 {
+    grid-area: g2_2;
+}
+.g3_1 {
+    grid-area: g3_1;
+    font-size: xx-large;
+}
+
+.g_img img {
+    width: 100%;
+}
+
+
+
+
+
+/*==ここまでgrid comment==*/
+
+
+
+
 .V_wrap {
     margin: 100px 0;
 }
@@ -247,6 +298,12 @@ a, button {
     vertical-align: bottom;
     text-align: center;
     color: white;
+}
+.oohn {
+    width: 150px;
+}
+.go_to_game div p img {
+    width: 400px;
 }
 /*==ここまでfooter comment==*/
 
@@ -428,6 +485,11 @@ table {
     padding: 10px 0;
     padding-left: 50px;
 }
+.DS_legend_S {
+    width: calc(80% - 50px);
+    padding: 10px 0;
+    padding-left: 50px;
+}
 pre {
     width: 80%;
     padding: 2em;/* 内側の余白 */
@@ -450,7 +512,6 @@ pre {
     margin: 10px 0;
     margin-left: 50px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     background-color: white;
@@ -458,6 +519,7 @@ pre {
 .hybr_box {
     height: 100%;
     width: auto;
+    max-width: 33%;
 }
 .hybr_box p {
     color: black;
@@ -466,8 +528,70 @@ pre {
 .hybr_img {
     height: 80%;
     width: auto;
+    max-width: 100%;
+}
+
+/*==ここまでdesign&simulation comment==*/
+
+
+
+
+
+.mtd_wrap {
+    height: auto;
+    padding: 0 17% 30px;
+    display: flex;
+    flex-direction: column;
+}
+.mtd_title {
+    border-left: solid blueviolet;
+    border-left-width: 10pt;
+    border-bottom: solid gray;
+    padding-left: 10px;
+    margin-top: 40px;
+}
+.mtd_subti {
+    color: white;
+    border-bottom: solid gray;
+    padding-left: 20px;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+.mtd_bodytext {
+    color: white;
+    width: 90%;
+    padding-left: 10%;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+.mtd_img {
+    width: 100%;
+    margin: 20px 0;
+}.mtd_bodytext h3 {
+    font-size: 2em;
+    color: rgb(172, 64, 64);
+}
+.min_unit {
+    margin-left: 30px;
+}
+.min_unit h4 {
+    font-size: large;
+}
+.min_unit span {
+    color: #aaa;
+}
+.solulist {
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    border-left: solid #777777;
 }
 /*==ここまでdesign&simulation comment==*/
+
+
+
+
 
 
 
@@ -499,8 +623,9 @@ pre {
 
 
 .gamewrap {
-    width: 80%;
+    width: 60%;
     display: flex;
+    padding: 0 20%;
     justify-content: center;
 }
 .gamepage {
