@@ -3,6 +3,7 @@
     <head>
         <link rel="icon" href="pics/EnemyBlack.png">
         <link rel="stylesheet" href="home.css">
+        <title>TeamTokyoTech / Design&Simulation</title>
         <script type="text/javascript" async
             src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
         </script>
@@ -34,7 +35,7 @@
                     </li>
                     <li class="btm_menu">
                         <a href="dsn_sim.html">
-                            <div class="nav_img_G"><img src="pics/DesignSimulation.png" alt="Design&Simulation"></div>
+                            <div class="nav_img_G"><img src="pics/DesignSimulation_888.png" alt="Design&Simulation"></div> <!--here-->
                             <button type="button" class="btm"></button>
                         </a>
                     </li>
@@ -302,11 +303,11 @@ k_1 = 1.0
 k_2 = 1.0
 k_m = 2.0     # Michaelis constant
 
-Setting Enzyme Concentration
+#Setting Enzyme Concentration
 E = 0.2 
 
 
-Differential equations
+#Differential equations
 def nemui1(y,t):
     dydt = [- k_1 * y[0] * y[1] + k_2 * y[2] * E/ (k_m + y[2]),
             
