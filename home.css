@@ -380,6 +380,9 @@ a, button {
     width: 100%;
     height: auto;
 }
+.csskanzenni {
+    position: absolute;
+}
 /*==ここまでTEAM comment==*/
 
 .abst_wrap {
