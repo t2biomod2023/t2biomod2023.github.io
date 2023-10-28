@@ -92,7 +92,7 @@
                     </div>
                     <div class="DS_bodytext">
                         <p>
-                            The following model shows how RNase-H actually moves a bullet placed on a field.
+                            The following model shows how RNase-H actually moves Bullet placed on Field.
                         </p>
                     </div>
                     <div class="tex">
@@ -114,9 +114,9 @@
                             <li>\([P]\) : concentration of degraded Base strand</li>
                         </ul>
                         <p>
-                            The dynamics of the bullet can be inferred from the change in \([X_3]\). \([X_3]\) is extremely low, the barrette will leave the field and may be sent somewhere far away.
-                            If \([X_3]\) is almost equal to the initial \([X_1]\), the bullet may remain stuck in the field, and the continued presence of a certain percentage of Uni/Base double strand will allow the barrette to remain on the field.
-                            And when there is a certain amount of Base strand and Uni strand that do not form double strands, the barrette may roll over the field and move.
+                            The dynamics of Bullet can be inferred from the change in \([X_3]\). \([X_3]\) is extremely low, Bullet will leave the Field and may be sent somewhere far away.
+                            If \([X_3]\) is almost equal to the initial \([X_1]\), Bullet may remain stuck in the Field, and the continued presence of a certain percentage of Uni/Base double strand will allow the Bullet to remain on the Field.
+                            And when there is a certain amount of Base strand and Uni strand that do not form double strands, Bullet may roll over the Field and move.
                             <br>
                             The actual calculations were performed using python. The code used and the results are shown below.
                         </p>
@@ -168,9 +168,9 @@ plt.show()</pre>
                     <img src="pics/glaph1.png" alt="result glaph1" class="glaph_pic">
                     <div class="DS_bodytext">
                         <p>
-                            As can be seen from the above results, when there are extremely large amounts of RNase-H, \([X_3]\) becomes very large and the bullet are fixed on the field.
-                            On the other hand, when RNase-H is extremely low, \([X_3]\) becomes very small and the bullet moves away from the field.
-                            It was shown that by setting the concentration of the RNase-H( \([E]\) ) appropriately, the bullet is able to move in a rotational manner and invade the Enemy.
+                            As can be seen from the above results, when there are extremely large amounts of RNase-H, \([X_3]\) becomes very large and Bullet are fixed on the Field.
+                            On the other hand, when RNase-H is extremely low, \([X_3]\) becomes very small and Bullet moves away from the Field.
+                            It was shown that by setting the concentration of the RNase-H( \([E]\) ) appropriately, Bullet is able to move in a rotational manner and invade Enemy.
                         </p>
                     </div>
                     <div class="title_top" id="B2">
@@ -178,7 +178,7 @@ plt.show()</pre>
                     </div>
                     <div class="DS_bodytext">
                         <p>
-                            The speed of the bullet can be discussed by considering the change in \([P]\).
+                            The speed of Bullet can be discussed by considering the change in \([P]\).
                             The code and graph with \([P]\) change are shown below.
                         </p>
                     </div>
@@ -232,8 +232,8 @@ plt.show()</pre>
                     <img src="pics/glaph2.png" alt="result glaph2" class="glaph_pic">
                     <div class="DS_bodytext">
                         <p>
-                            The graph of \([P]\) draws a straight line. The slope of the line represents the degradation rate of the Base strand, which is proportional to the speed of bullet.
-                            The equation for \([P]\) indicates that \([P]\) is proportional to \([E]\) and that the speed of bullet increases as the amount of RNase-H is increased.
+                            The graph of \([P]\) draws a straight line. The slope of the line represents the degradation rate of the Base strand, which is proportional to the speed of Bullet.
+                            The equation for \([P]\) indicates that \([P]\) is proportional to \([E]\) and that the speed of Bullet increases as the amount of RNase-H is increased.
                         </p>
                     </div>
                 </div>
@@ -247,10 +247,10 @@ plt.show()</pre>
                         <p>
                             The roles of each DNA and RNA strand are explained below.
                             First, the DNA strand on the Bullet surface is called the Uni strand, which has a sequence that binds to the Receptor strand on the Enemy and causes a fluorescence change inside the Enemy.
-                            Second, the scaffold RNA strand is called the Base strand, which serves as the field in the microinvader game.
+                            Second, the scaffold RNA strand is called the Base strand, which serves as the Field in the microinvader game.
                             The third type is the stopper strand, which is the RNA strand that stops the Bullet from going to the Enemy; the stopper strand has a complementary sequence to the base strand and blocks the Bullet's movement.
-                            RNase-H, the enzyme that acts as the engine of the bullet, hydrolyzes RNA in a DNA/RNA double-stranded structure, while the base/stopper strand is not hydrolyzed by RNase-H because it is an RNA/RNA double-stranded structure,not DNA/RNA. As a result, Bullet progression can be prevented.
-                            Finally, there is the Trigger strand, which has a complementary sequence to the Stopper strand; Cannon means that the player drops this Trigger strand into the field, and the Trigger strand causes a strand displacement reaction that pulls the Stopper strand away from the Base strand. This causes the Bullet to travel toward the Enemy.
+                            RNase-H, the enzyme that acts as the engine of the Bullet, hydrolyzes RNA in a DNA/RNA double-stranded structure, while the base/stopper strand is not hydrolyzed by RNase-H because it is an RNA/RNA double-stranded structure,not DNA/RNA. As a result, Bullet progression can be prevented.
+                            Finally, there is the Trigger strand, which has a complementary sequence to the Stopper strand; Cannon means that the player drops this Trigger strand into the Field, and the Trigger strand causes a strand displacement reaction that pulls the Stopper strand away from the Base strand. This causes the Bullet to travel toward the Enemy.
                         </p>    
                     </div>
                     ---------------------------->
@@ -261,7 +261,7 @@ plt.show()</pre>
                     <div class="DS_bodytext">
                         <p>
                             The sequences of each strands were designed using NUPACK. <br>
-                            The sequences for the Uni strand were taken from the Enemy reference paper<a href="project.html#ref"><sup style="color: aqua;">[2]</sup></a>, since the interaction of the Uni strand with the Enemy is also involved.
+                            The sequences for the Uni strand were taken from Enemy reference paper<a href="project.html#ref"><sup style="color: aqua;">[2]</sup></a>, since the interaction of the Uni strand with Enemy is also involved.
                         </p>
                     </div>
                     <div class="title_top" id="Can_D">
@@ -359,7 +359,7 @@ plt.show()</pre>
                     </div>
                     <div class="DS_bodytext">
                         <p>
-                            Next, simulations using Visual DSD were performed to verify the chain displacement reaction when a Trigger chain was added. The code  and the graphical results are shown below.
+                            Next, simulations using Visual DSD were performed to verify the strand displacement reaction when a Trigger chain was added. The code  and the graphical results are shown below.
                         </p>
                     </div>
 <pre>directive simulation {initial=0; final=4000; points=1000;plots=[[1]{2^};[1 2^];<1 2^>]}
@@ -376,7 +376,7 @@ def N1=1
                     <img src="pics/simulation_2.svg" alt="simulation" class="DS_legend" style="background-color: white; margin-top: 20px;">
                     <div class="DS_bodytext">
                         <p>
-                            The reaction is rapid, indicating that the Trigger chain acts as a canon.
+                            The reaction is rapid, indicating that the Trigger strand acts as Cannon.
                         </p>
                     </div>
                 </div>
