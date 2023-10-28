@@ -827,7 +827,21 @@ pre {
     bottom: 30%;
     width: 50px;
 }
-/*==ここまでconclusion comment==*/
+.ACHI {
+    padding-top: 30px;
+}
+.ACHI h1 {
+    border-left: solid red;
+    border-left-width: 10pt;
+    border-bottom: solid gray;
+    margin: 40px 20% 10px;
+    padding-left: 10px;
+}
+.pepepe {
+    padding-left: 10%;
+    font-size: 1.2em;
+}
+/*==ここまでachievement comment==*/
 
 
 .rst_wrap {
