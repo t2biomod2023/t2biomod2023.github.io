@@ -150,7 +150,6 @@ li {
 }
 
 a {
-    color: #2e2e2e;
     text-decoration: none;   
 }
 /*=====================================================================================*/
@@ -639,6 +638,15 @@ a, button {
     padding-top: 10px;
     font-size: 1.5em;
     color: rgb(109, 109, 194);
+}
+a .r {
+    color: red;
+}
+a .g {
+    color: #0f0;
+}
+a .m {
+    color: #999;
 }
 .DS_title {
     border-left: solid red;
