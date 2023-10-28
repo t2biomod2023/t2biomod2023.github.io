@@ -8,10 +8,10 @@ const bulletImg = new Image();
 bulletImg.src = 'pics/Bullet.png';
 
 const enemyImg = new Image();
-enemyImg.src = 'pics/Enemy_red.png';
+enemyImg.src = 'pics/Enemy_green.png';
 
 const enemyImgR = new Image();
-enemyImgR.src = 'pics/Enemy_green.png';
+enemyImgR.src = 'pics/Enemy_red.png';
 
 let lastFiredTime = Date.now(); // 前回の弾の発射時刻を記録
 let players = [];
