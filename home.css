@@ -306,6 +306,9 @@ a, button {
     justify-content: center;
     width: 100%;
 }
+.credit {
+    font-size: 0.7em !important;
+}
 /*==ここまでyoutube comment==*/
 /*==ここまでhome comment==*/
 
